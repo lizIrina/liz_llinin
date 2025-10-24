@@ -15,3 +15,7 @@ def test_suma_route(client):
     response = client.get('/suma/2/3')
     data = response.get_json()
     assert data["resultado"] == 5
+
+
+def test_fallo_temporal():
+    assert 1 == 2
